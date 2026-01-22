@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Pablo Fuentes | SBA Representative Candidate</title>
+    <style>
+        :root {
+            --navy: #1C2A39;
+            --maroon: #A6192E;
+            --white: #FFFFFF;
+            --light-gray: #F4F4F4;
+            --dark-gray: #333333;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--navy); background: var(--white); line-height: 1.6; }
+        
+        /* Navigation */
+        header { background: var(--navy); color: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .logo { font-size: 1.5rem; font-weight: bold; text-transform: uppercase; }
+        .logo span { color: var(--maroon); }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-weight: 500; }
+        nav a:hover { color: var(--maroon); transition: 0.3s; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(to right, rgba(28, 42, 57, 0.95), rgba(28, 42, 57, 0.7)), url('your-image-url-here.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: var(--white); 
+            padding: 100px 5%; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            min-height: 60vh; 
+        }
+        .hero h1 { font-size: 4rem; margin: 0 0 10px 0; line-height: 1.1; text-transform: uppercase; border-left: 10px solid var(--maroon); padding-left: 30px; }
+        .hero h2 { font-size: 1.8rem; font-weight: 300; margin-bottom: 30px; padding-left: 30px; opacity: 0.9; }
+        .btn { background: var(--maroon); color: var(--white); padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 4px; display: inline-block; margin-top: 20px; margin-left: 30px; text-transform: uppercase; letter-spacing: 1px; transition: background 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background: #8a1325; }
+
+        /* Content Sections */
+        .container { max-width: 1200px; margin: auto; padding: 60px 20px; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--navy); margin-bottom: 10px; position: relative; display: inline-block; }
+        .section-title h2::after { content: ''; display: block; width: 60px; height: 4px; background: var(--maroon); margin: 10px auto 0; }
+        
+        /* Proposal Grid */
+        .proposal-category { margin-bottom: 60px; }
+        .category-header { background: var(--navy); color: var(--white); padding: 15px 25px; border-radius: 8px 8px 0 0; font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; }
+        .category-header::before { content: '■'; color: var(--maroon); margin-right: 10px; font-size: 1.2rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; background: var(--light-gray); padding: 30px; border-radius: 0 0 8px 8px; border: 1px solid #ddd; }
+        .card { background: var(--white); padding: 25px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--maroon); margin-top: 0; font-size: 1.2rem; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .card p { font-size: 0.95rem; color: var(--dark-gray); }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); text-align: center; padding: 50px 20px; margin-top: 50px; font-size: 0.9rem; }
+        footer p { opacity: 0.7; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; padding-left: 15px; border-width: 5px; }
+            .hero h2 { padding-left: 15px; font-size: 1.2rem; }
+            .btn { margin-left: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Juan Pablo <span>Fuentes</span></div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#platform">Platform</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Actions Speak<br>Louder Than Words</h1>
+    <h2>Building a stronger, integrated TAMU Law for LL.M. & J.D. students.</h2>
+    <a href="#platform" class="btn">View Detailed Proposals</a>
+</section>
+
+<div class="container" id="about">
+    <div class="section-title">
+        <h2>About The Candidate</h2>
+    </div>
+    <p style="text-align: center; max-width: 800px; margin: auto; font-size: 1.1rem;">
+        I am a licensed Colombian attorney with 5 years of experience, a Master's in Taxation, and an IRS Enrolled Agent credential. Currently pursuing my LL.M. at Texas A&M, I am running for SBA Representative to bridge the gap between our programs and ensure every student has the tools to succeed in the global market.
+    </p>
+</div>
+
+<div class="container" id="platform">
+    <div class="section-title">
+        <h2>My Platform</h2>
+        <p>Comprehensive Solutions for Networking, Academics, and Career Success</p>
+    </div>
+
+    <div class="proposal-category">
+        <div class="category-header">1. Networking & LL.M.-J.D. Integration</div>
+        <div class="grid">
+            <div class="card">
+                <h3>Mentorship Program</h3>
+                <p>Launch a peer-mentor system pairing LL.M.s with J.D. students for co-hosting study groups, social mixers, and mutual class shadowing.</p>
+            </div>
+            <div class="card">
+                <h3>Speed Networking</h3>
+                <p>Organize "International Speed Networking" events where J.D.s and LL.M.s rotate through short conversations to exchange cultural and legal insights.</p>
+            </div>
+            <div class="card">
+                <h3>Jurisdictional Registry</h3>
+                <p>Create a database of LL.M. alumni specialties and home countries, allowing J.D. students and firms to easily find experts in specific global markets.</p>
+            </div>
+            <div class="card">
+                <h3>Shared Student Orgs</h3>
+                <p>Facilitate active LL.M. membership in journals, clinics, and the Board of Advocates to co-sponsor cultural nights and moot courts.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="proposal-category">
+        <div class="category-header">2. Bar Exam Preparation & Support</div>
+        <div class="grid">
+            <div class="card">
+                <h3>Bar-Track Curriculum</h3>
+                <p>Introduce an optional "Bar-Track" certificate with weekly practice classes, MBE drills, and essay workshops integrated into the schedule.</p>
+            </div>
+            <div class="card">
+                <h3>Dedicated Advising</h3>
+                <p>Assign faculty advisors experienced in bar rules to help students map out registration deadlines and required subject courses early.</p>
+            </div>
+            <div class="card">
+                <h3>Workshops & Prep</h3>
+                <p>Host Spring/Fall workshops on test-taking strategies and subsidize commercial prep courses (e.g., Themis, BARBRI) for LL.M. students.</p>
+            </div>
+            <div class="card">
+                <h3>Alumni Study Groups</h3>
+                <p>Form inter-class study groups where past test-takers mentor current students, utilizing data on past LL.M. pass rates to set realistic targets.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="proposal-category">
+        <div class="category-header">3. Professional Brand & Career Services</div>
+        <div class="grid">
+            <div class="card">
+                <h3>"Global Lawyer" Badge</h3>
+                <p>Establish certificates for specialized skills (e.g., Business Law, Compliance) to help LL.M.s market themselves as experts to employers.</p>
+            </div>
+            <div class="card">
+                <h3>Resume Coaching</h3>
+                <p>Provide specialized training on how to frame bilingualism and civil-law expertise as a "window to the world" for U.S. firms.</p>
+            </div>
+            <div class="card">
+                <h3>Employer Engagement</h3>
+                <p>Host panels with international trade firms and corporate counsel who value foreign-educated lawyers, demystifying the hiring path.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="proposal-category">
+        <div class="category-header">4. Recruiting & Interview Prep</div>
+        <div class="grid">
+            <div class="card">
+                <h3>Targeted Fairs (ISIP)</h3>
+                <p>Partner with consortiums to send qualified TAMU students to the International Student Interview Program (ISIP) in NYC.</p>
+            </div>
+            <div class="card">
+                <h3>Mock Interviews</h3>
+                <p>Organize mock interviews with alumni who were former LL.M. hires to practice answering questions about foreign legal backgrounds.</p>
+            </div>
+            <div class="card">
+                <h3>On-Campus Recruiting</h3>
+                <p>Create an "International Track" at TAMU career fairs, inviting firms specifically looking for H-1B candidates or foreign language skills.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="proposal-category">
+        <div class="category-header">5. Visa Support & The Aggie Network</div>
+        <div class="grid">
+            <div class="card">
+                <h3>Visa Transparency</h3>
+                <p>Publish clear flowcharts for CPT/OPT timelines and host workshops with immigration attorneys to explain H-1B and TN visa odds.</p>
+            </div>
+            <div class="card">
+                <h3>Staff Training</h3>
+                <p>Ensure all career counselors are trained on basic immigration rules to provide accurate advice on internships and work authorization.</p>
+            </div>
+            <div class="card">
+                <h3>Alumni Connections</h3>
+                <p>Organize happy hours with the DFW and Houston Aggie Law alumni chapters to connect students with practicing attorneys.</p>
+            </div>
+            <div class="card">
+                <h3>Dual-Degree Options</h3>
+                <p>Explore fast-track J.D./LL.M. pathways for students who wish to deepen their U.S. legal training and marketability.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">VOTE JUAN PABLO FUENTES</div>
+    <p>SBA Representative | District 243 | Election in 2026</p>
+    <p>&copy; 2026 Committee to Elect Juan Pablo Fuentes. All rights reserved.</p>
+    <p style="margin-top: 20px; font-style: italic;">"Helping others keep creating success"</p>
+</footer>
+
+</body>
+</html>
